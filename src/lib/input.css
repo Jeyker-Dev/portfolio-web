@@ -1,0 +1,12 @@
+@import url(../../node_modules/tailwindcss-kit/Componentes/public/buttons/botones.css);
+@import url(../../node_modules/tailwindcss-kit/Componentes/public/card/card.css);
+@import url(../../node_modules/tailwindcss-kit/Componentes/public/dropdown/dropdown.css);
+@import url(../../node_modules/tailwindcss-kit/Componentes/public/galeria/galeria.css);
+@import url(../../node_modules/tailwindcss-kit/Componentes/public/hero/hero.css);
+@import url(./font.css);
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
