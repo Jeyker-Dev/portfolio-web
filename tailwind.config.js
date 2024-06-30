@@ -6,7 +6,14 @@ module.exports = {
     require("./src/js/mypreset.js")
   ],
   theme: {
-    extend: {},
+    extend: 
+    {
+      fontFamily:
+      {
+        "playfair": ["Playfair Display", "serif"],
+        "source": ["Source Sans Pro", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }

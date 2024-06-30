@@ -116,3 +116,16 @@
 .animation-line-bounce:hover::before {
     animation: bounce 1.8s ease infinite;
 }
+
+@keyframes moveLeftRight {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px); /* Ajusta este valor para controlar la distancia */
+    }
+  }
+  
+  .icon-arrow {
+    animation: moveLeftRight 2s ease-in-out infinite;
+  }
