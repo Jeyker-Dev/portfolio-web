@@ -129,3 +129,187 @@
   .icon-arrow {
     animation: moveLeftRight 2s ease-in-out infinite;
   }
+
+
+  .nube-primary {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 1;
+    /*Aplicandoelefectodebrillo*/box-shadow: 0 0 15px #667eea, 0 0 20px #764ba2, 0 0 25px #667eea, 0 0 30px #764ba2;
+    transition: all 0.3s ease;
+    
+}
+  
+  .nube-primary:hover {
+    /* Aumentando el brillo al pasar el mouse */
+    box-shadow: 0 0 20px #667eea, 0 0 25px #764ba2, 0 0 30px #667eea, 0 0 35px #764ba2;
+  }
+
+  .nube-secondary {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(45deg, #06b6d4, #3b82f6);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 1;
+    /* Aplicando efecto de brillo */
+    box-shadow: 0 0 15px #06b6d4, 0 0 20px #3b82f6, 0 0 25px #06b6d4, 0 0 30px #3b82f6;
+    transition: all 0.3s ease;
+}
+
+.nube-secondary:hover {
+    /* Aumentando el brillo al pasar el mouse */
+    box-shadow: 0 0 20px #06b6d4, 0 0 25px #3b82f6, 0 0 30px #06b6d4, 0 0 35px #3b82f6;
+}
+
+.nube-third {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(45deg, #ff9800, #ffc107);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 1;
+    /* Aplicando efecto de brillo */
+    box-shadow: 0 0 15px #ff9800, 0 0 20px #ffc107, 0 0 25px #ff9800, 0 0 30px #ffc107;
+    transition: all 0.3s ease;
+}
+
+.nube-third:hover {
+    /* Aumentando el brillo al pasar el mouse */
+    box-shadow: 0 0 20px #ff9800, 0 0 25px #ffc107, 0 0 30px #ff9800, 0 0 35px #ffc107;
+}
+
+.nube-fourth {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(45deg, #ec407a, #d81b60);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 1;
+    /* Aplicando efecto de brillo */
+    box-shadow: 0 0 15px #ec407a, 0 0 20px #d81b60, 0 0 25px #ec407a, 0 0 30px #d81b60;
+    transition: all 0.3s ease;
+}
+
+.nube-fourth:hover {
+    /* Aumentando el brillo al pasar el mouse */
+    box-shadow: 0 0 20px #ec407a, 0 0 25px #d81b60, 0 0 30px #ec407a, 0 0 35px #d81b60;
+}
+
+.nube-fifth {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(45deg, #4caf50, #26a69a);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 1;
+    /* Aplicando efecto de brillo */
+    box-shadow: 0 0 15px #4caf50, 0 0 20px #26a69a, 0 0 25px #4caf50, 0 0 30px #26a69a;
+    transition: all 0.3s ease;
+}
+
+.nube-fifth:hover {
+    /* Aumentando el brillo al pasar el mouse */
+    box-shadow: 0 0 20px #4caf50, 0 0 25px #26a69a, 0 0 30px #4caf50, 0 0 35px #26a69a;
+}
+
+
+  /* Pulsar */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  .animation-pulse {
+    animation: pulse 2s infinite;
+  }
+  
+  /* Rotación */
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .animation-rotate {
+    animation: rotate 20s linear infinite;
+  }
+
+  /* Rotación con detención en la mitad y retorno */
+@keyframes rotate-mid {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(2deg); -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg); -ms-transform: rotate(2deg); -o-transform: rotate(2deg); }
+    100% { transform: rotate(0deg); }
+  }
+  .animation-rotate-mid {
+    animation: rotate-mid 20s linear infinite;
+  }
+  
+  /* Balanceo */
+  @keyframes swing {
+    0% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+  }
+  .animation-swing {
+    display: inline-block;
+    animation: swing 2s infinite;
+  }
+  
+  /* Aparición con Desplazamiento */
+  @keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  .animation-slide-in-left {
+    animation: slideInLeft 0.5s ease-out forwards;
+  }
+
+  /* animation-fade-in: Hace que el elemento se desvanezca gradualmente hasta ser completamente visible. */
+
+  @keyframes animation-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animation-fade-in {
+    animation: animation-fade-in 10s ease-out infinite;
+    -webkit-animation: animation-fade-in 10s ease-out infinite;
+}
+  
+  /* Efecto 3D */
+  .creativity:hover {
+    transform: perspective(500px) rotateY(20deg);
+    transition: transform 0.5s;
+  }
