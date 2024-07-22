@@ -443,54 +443,522 @@
   padding: 60px 60px;
 }
 
+.container-image-animated
+{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #130e21;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.container-image-animated::before
+{
+  content: '';
+  position: absolute;
+  inset: -10px 120px;
+  background: linear-gradient(315deg, #00ccff, #d400d4);
+  transition: 0.5s;
+  animation: animate 4s linear infinite;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-animation: animate 4s linear infinite;
+}
+
+.container-image-animated::after
+{
+  content: '';
+  position: absolute;
+  inset: 6px;
+  background: #130e21;
+  border-radius: 50%;
+  z-index: 1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.container-img-perfil
+{
+  position: absolute;
+  inset: 30px;
+  border: 6px solid #070a1c;
+  z-index: 3;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.img-perfil
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes animate
+{
+  0%
+  {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  100%
+  {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+}
+
 /* Cards Icons */
 
-.card-icon-html
-{
-  @apply bg-gradient-to-b from-orange-500 via-orange-600 to-orange-700
+/* HTML */
+
+.card-icon-html {
+  transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -webkit-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -moz-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -ms-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -o-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
 }
 
-.card-icon-css
-{
-  @apply bg-gradient-to-b from-sky-500 via-sky-600 to-sky-700
+.card-icon-html svg,
+.card-icon-html span {
+  transition: fill 0.3s ease, color 0.3s ease;
 }
 
-.card-icon-sass
-{
-  @apply bg-gradient-to-b from-pink-500 via-pink-600 to-pink-700
+.card-icon-html {
+  background-color: rgba(255, 87, 34, 0.2); /* Anaranjado suave con transparencia */
+  box-shadow: 0 5px 15px rgba(255, 87, 34, 0.2); /* Sombra con el mismo color anaranjado */
+  backdrop-filter: blur(10px);
 }
 
-.card-icon-tailwind
-{
-  @apply bg-gradient-to-b from-cyan-500 via-cyan-600 to-cyan-700
+.card-icon-html svg {
+  fill: #ff5722; /* Cambia el color de relleno del SVG a anaranjado */
 }
 
-.card-icon-js
-{
-  @apply bg-gradient-to-b from-yellow-500 via-yellow-600 to-yellow-700
+.card-icon-html span {
+  color: #ff5722; /* Cambia el color del texto a anaranjado */
 }
 
-.card-icon-node
-{
-  @apply bg-gradient-to-b from-green-500 via-green-600 to-green-700
+
+.card-icon-html:hover {
+  background-color: rgba(255, 87, 34, 0.5); /* Anaranjado suave con transparencia */
+  box-shadow: 0 5px 15px rgba(255, 87, 34, 0.5); /* Sombra con el mismo color anaranjado */
+  backdrop-filter: blur(10px);
 }
 
-.card-icon-php
-{
-  @apply bg-gradient-to-b from-blue-500 via-blue-600 to-blue-700
+.card-icon-html:hover svg {
+  fill: #ff5722; /* Cambia el color de relleno del SVG a anaranjado */
 }
 
-.card-icon-laravel
-{
-  @apply bg-gradient-to-b from-red-500 via-red-600 to-red-700
+.card-icon-html:hover span {
+  color: #ff5722; /* Cambia el color del texto a anaranjado */
+}
+/* CSS */
+
+.card-icon-css {
+  transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -webkit-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -moz-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -ms-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -o-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
 }
 
-.card-icon-git
-{
-  @apply bg-gradient-to-b from-purple-500 via-purple-600 to-purple-700
+.card-icon-css svg,
+.card-icon-css span {
+  transition: fill 0.3s ease, color 0.3s ease;
 }
 
-.card-icon-sql
-{
-  @apply bg-gradient-to-b from-indigo-500 via-indigo-600 to-indigo-700
+.card-icon-css{
+  background-color: rgba(0, 123, 255, 0.2); /* Azul claro suave con transparencia */
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2); /* Sombra con el mismo color azul claro */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-css svg {
+  fill: #007bff; /* Cambia el color de relleno del SVG a azul claro */
+}
+
+.card-icon-css span {
+  color: #007bff; /* Cambia el color del texto a azul claro */
+}
+
+.card-icon-css:hover {
+  background-color: rgba(0, 123, 255, 0.5); /* Azul claro suave con transparencia */
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.5); /* Sombra con el mismo color azul claro */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-css:hover svg {
+  fill: #007bff; /* Cambia el color de relleno del SVG a azul claro */
+}
+
+.card-icon-css:hover span {
+  color: #007bff; /* Cambia el color del texto a azul claro */
+}
+
+/* SASS */
+
+.card-icon-sass {
+  transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -webkit-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -moz-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -ms-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -o-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+}
+
+.card-icon-sass svg,
+.card-icon-sass span {
+  transition: fill 0.3s ease, color 0.3s ease;
+}
+
+.card-icon-sass {
+  background-color: rgba(255, 20, 147, 0.2); /* Rosa suave con transparencia */
+  box-shadow: 0 5px 15px rgba(255, 20, 147, 0.2); /* Sombra con el mismo color rosa */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-sass svg {
+  fill: #ff1493; /* Cambia el color de relleno del SVG a rosa */
+}
+
+.card-icon-sass span {
+  color: #ff1493; /* Cambia el color del texto a rosa */
+}
+
+.card-icon-sass:hover {
+  background-color: rgba(255, 20, 147, 0.5); /* Rosa suave con transparencia */
+  box-shadow: 0 5px 15px rgba(255, 20, 147, 0.5); /* Sombra con el mismo color rosa */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-sass:hover svg {
+  fill: #ff1493; /* Cambia el color de relleno del SVG a rosa */
+}
+
+.card-icon-sass:hover span {
+  color: #ff1493; /* Cambia el color del texto a rosa */
+}
+
+/* TAILWIND */
+
+.card-icon-tailwind {
+  transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -webkit-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -moz-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -ms-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -o-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+}
+
+.card-icon-tailwind svg,
+.card-icon-tailwind span {
+  transition: fill 0.3s ease, color 0.3s ease;
+}
+
+.card-icon-tailwind {
+  background-color: rgba(56, 189, 248, 0.2); /* Azul claro suave con transparencia */
+  box-shadow: 0 5px 15px rgba(56, 189, 248, 0.2); /* Sombra con el mismo color azul claro */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-tailwind svg {
+  color: #38bdf8;
+}
+
+.card-icon-tailwind span {
+  color: #38bdf8; /* Cambia el color del texto a azul claro */
+}
+
+.card-icon-tailwind:hover {
+  background-color: rgba(56, 189, 248, 0.5); /* Azul claro suave con transparencia */
+  box-shadow: 0 5px 15px rgba(56, 189, 248, 0.5); /* Sombra con el mismo color azul claro */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-tailwind:hover svg {
+  color: #38bdf8;
+}
+
+.card-icon-tailwind:hover span {
+  color: #38bdf8; /* Cambia el color del texto a azul claro */
+}
+
+/* JAVASCRIPT */
+
+.card-icon-js {
+  transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -webkit-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -moz-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -ms-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -o-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+}
+
+.card-icon-js svg,
+.card-icon-js span {
+  transition: fill 0.3s ease, color 0.3s ease;
+}
+
+.card-icon-js {
+  background-color: rgba(247, 223, 30, 0.2); /* Amarillo suave con transparencia */
+  box-shadow: 0 5px 15px rgba(247, 223, 30, 0.2); /* Sombra con el mismo color amarillo */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-js svg {
+  fill: #f7df1e; /* Cambia el color de relleno del SVG a amarillo */
+}
+
+.card-icon-js span {
+  color: #f7df1e; /* Cambia el color del texto a amarillo */
+}
+
+.card-icon-js:hover {
+  background-color: rgba(247, 223, 30, 0.5); /* Amarillo suave con transparencia */
+  box-shadow: 0 5px 15px rgba(247, 223, 30, 0.5); /* Sombra con el mismo color amarillo */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-js:hover svg {
+  fill: #f7df1e; /* Cambia el color de relleno del SVG a amarillo */
+}
+
+.card-icon-js:hover span {
+  color: #f7df1e; /* Cambia el color del texto a amarillo */
+}
+
+/* NODE */
+
+.card-icon-node {
+  transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -webkit-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -moz-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -ms-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -o-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+}
+
+.card-icon-node svg,
+.card-icon-node span {
+  transition: fill 0.3s ease, color 0.3s ease;
+}
+
+.card-icon-node {
+  background-color: rgba(80, 169, 42, 0.2); /* Verde suave con transparencia */
+  box-shadow: 0 5px 15px rgba(80, 169, 42, 0.2); /* Sombra con el mismo color verde */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-node svg {
+  fill: #50a92a; /* Cambia el color de relleno del SVG a verde */
+}
+
+.card-icon-node span {
+  color: #50a92a; /* Cambia el color del texto a verde */
+}
+
+.card-icon-node:hover {
+  background-color: rgba(80, 169, 42, 0.5); /* Verde suave con transparencia */
+  box-shadow: 0 5px 15px rgba(80, 169, 42, 0.5); /* Sombra con el mismo color verde */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-node:hover svg {
+  fill: #50a92a; /* Cambia el color de relleno del SVG a verde */
+}
+
+.card-icon-node:hover span {
+  color: #50a92a; /* Cambia el color del texto a verde */
+}
+
+/* PHP */
+
+.card-icon-php {
+  transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -webkit-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -moz-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -ms-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -o-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+}
+
+.card-icon-php svg,
+.card-icon-php span {
+  transition: fill 0.3s ease, color 0.3s ease;
+}
+
+.card-icon-php:hover {
+  background-color: rgba(59, 130, 246, 0.2); /* Azul suave con transparencia usando #3b82f6 */
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2); /* Sombra con el mismo color azul #3b82f6 */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-php:hover svg {
+  fill: #3b82f6; /* Cambia el color de relleno del SVG a #3b82f6 */
+}
+
+.card-icon-php:hover span {
+  color: #3b82f6; /* Cambia el color del texto a #3b82f6 */
+}
+
+.card-icon-php {
+  background-color: rgba(59, 130, 246, 0.5); /* Azul suave con transparencia usando #3b82f6 */
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.5); /* Sombra con el mismo color azul #3b82f6 */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-php svg {
+  fill: #3b82f6; /* Cambia el color de relleno del SVG a #3b82f6 */
+}
+
+.card-icon-php span {
+  color: #3b82f6; /* Cambia el color del texto a #3b82f6 */
+}
+
+/* LARAVEL */
+
+.card-icon-laravel {
+  transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -webkit-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -moz-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -ms-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -o-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+}
+
+.card-icon-laravel svg,
+.card-icon-laravel span {
+  transition: fill 0.3s ease, color 0.3s ease;
+}
+
+.card-icon-laravel {
+  background-color: rgba(239, 68, 68, 0.2); /* Rojo suave con transparencia */
+  box-shadow: 0 5px 15px rgba(239, 68, 68, 0.2); /* Sombra con el mismo color rojo */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-laravel svg {
+  color: #ef4444; /* Cambia el color de relleno del SVG a rojo */
+}
+
+.card-icon-laravel span {
+  color: #ef4444; /* Cambia el color del texto a rojo */
+}
+
+.card-icon-laravel:hover {
+  background-color: rgba(239, 68, 68, 0.5); /* Rojo suave con transparencia */
+  box-shadow: 0 5px 15px rgba(239, 68, 68, 0.5); /* Sombra con el mismo color rojo */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-laravel:hover svg {
+  color: #ef4444; /* Cambia el color de relleno del SVG a rojo */
+}
+
+.card-icon-laravel:hover span {
+  color: #ef4444; /* Cambia el color del texto a rojo */
+}
+
+/* GIT */
+
+.card-icon-git {
+  transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -webkit-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -moz-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -ms-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -o-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+}
+
+.card-icon-git svg,
+.card-icon-git span {
+  transition: fill 0.3s ease, color 0.3s ease;
+}
+
+.card-icon-git {
+  background-color: rgba(255, 173, 66, 0.2); /* Naranja suave con transparencia */
+  box-shadow: 0 5px 15px rgba(255, 173, 66, 0.2); /* Sombra con el mismo color naranja */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-git svg {
+  color: #ffad42; /* Cambia el color de relleno del SVG a naranja */
+}
+
+.card-icon-git span {
+  color: #ffad42; /* Cambia el color del texto a naranja */
+}
+
+.card-icon-git:hover {
+  background-color: rgba(255, 173, 66, 0.5); /* Naranja suave con transparencia */
+  box-shadow: 0 5px 15px rgba(255, 173, 66, 0.5); /* Sombra con el mismo color naranja */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-git:hover svg {
+  color: #ffad42; /* Cambia el color de relleno del SVG a naranja */
+}
+
+.card-icon-git:hover span {
+  color: #ffad42; /* Cambia el color del texto a naranja */
+}
+
+/* SQL */
+
+.card-icon-sql {
+  transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -webkit-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -moz-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -ms-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -o-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+}
+
+.card-icon-sql svg,
+.card-icon-sql span {
+  transition: fill 0.3s ease, color 0.3s ease;
+}
+
+.card-icon-sql {
+  background-color: rgba(99, 102, 242, 0.2); /* Azul suave con transparencia */
+  box-shadow: 0 5px 15px rgba(99, 102, 242, 0.2); /* Sombra con el mismo color azul */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-sql svg {
+  color: #6366f2; /* Cambia el color de relleno del SVG a azul */
+}
+
+.card-icon-sql span {
+  color: #6366f2; /* Cambia el color del texto a azul */
+}
+
+.card-icon-sql:hover {
+  background-color: rgba(99, 102, 242, 0.5); /* Azul suave con transparencia */
+  box-shadow: 0 5px 15px rgba(99, 102, 242, 0.5); /* Sombra con el mismo color azul */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-sql:hover svg {
+  color: #6366f2; /* Cambia el color de relleno del SVG a azul */
+}
+
+.card-icon-sql:hover span {
+  color: #6366f2; /* Cambia el color del texto a azul */
 }
