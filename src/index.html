@@ -8,7 +8,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portafolio Web</title>
 </head>
-<body class="bg-white dark:bg-indigo-990 h-screen">
+<body class="bg-indigo-990 h-screen">
 
     <!-- Header -->
     <header class="sticky z-50 top-0 flex justify-between items-center w-full backdrop-blur-3xl transition-colors border-indigo-50/[0.06] bg-indigo-990/75">
@@ -17,7 +17,7 @@
 
             <a href="#" class="font-source">
                 <span class="text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-black"> < </span>
-                <span class="text-2xl dark:text-white">Jeyker-Dev</span>
+                <span class="text-2xl text-white">Jeyker-Dev</span>
                 <span class="text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-black"> /> </span>
             </a>
 
@@ -29,25 +29,25 @@
             <ul class="flex flex-row justify-between items-center w-full p-3">
 
                 <li class="w-1/4">
-                    <a href="#" class="font-playfair dark:text-white hover:text-violet-400 p-2 md:text-xl relative animation-line w-full flex justify-center items-center">
+                    <a href="#" class="font-playfair text-white hover:text-violet-400 p-2 md:text-xl relative animation-line w-full flex justify-center items-center">
                         About Me
                     </a>
                 </li>
 
                 <li class="w-1/4">
-                    <a href="#" class="font-playfair dark:text-white hover:text-violet-400 p-2 md:text-xl relative animation-line animation-line-roll w-full flex justify-center items-center">
+                    <a href="#" class="font-playfair text-white hover:text-violet-400 p-2 md:text-xl relative animation-line animation-line-roll w-full flex justify-center items-center">
                         Technologies
                     </a>
                 </li>
 
                 <li class="w-1/4">
-                    <a href="#" class="font-playfair dark:text-white hover:text-violet-400 p-2 md:text-xl relative animation-line animation-line-pulse w-full flex justify-center items-center">
+                    <a href="#" class="font-playfair text-white hover:text-violet-400 p-2 md:text-xl relative animation-line animation-line-pulse w-full flex justify-center items-center">
                         Projects
                     </a>
                 </li>
 
                 <li class="w-1/4">
-                    <a href="#" class="font-playfair dark:text-white hover:text-violet-400 p-2 md:text-xl relative animation-line animation-line-bounce w-full flex justify-center items-center">
+                    <a href="#" class="font-playfair text-white hover:text-violet-400 p-2 md:text-xl relative animation-line animation-line-bounce w-full flex justify-center items-center">
                         Contact
                     </a>
                 </li>
@@ -74,8 +74,8 @@
 
             </div>
 
-            <h1 class="text-4xl dark:text-white font-playfair p-4 w-11/12 title-reveal mb-6">Web Developer Creating digital solutions for your business</h1>
-            <p class="text-xl dark:text-white font-source text-center w-4/5 text-reveal">I bring creativity and technical expertise to design and develop websites that enhance your online presence and connect you with your customers.
+            <h1 class="text-4xl text-white font-playfair p-4 w-11/12 title-reveal mb-6">Web Developer Creating digital solutions for your business</h1>
+            <p class="text-xl text-white font-source text-center w-4/5 text-reveal">I bring creativity and technical expertise to design and develop websites that enhance your online presence and connect you with your customers.
             </p>
 
             
@@ -127,49 +127,55 @@
     <section class="flex flex-col justify-center items-center w-11/12 mx-auto my-4 mt-52">
 
             <!-- Title About Me -->
-            <h2 class="text-4xl dark:text-white font-bold font-playfair title-aboutme-reveal">About Me</h2>
+            <h2 class="text-4xl text-white font-bold font-playfair title-aboutme-reveal">About Me</h2>
 
+            <!-- Container About Cards and Image -->
         <div class="aboutme-box-container flex justify-center items-center w-full gap-3 py-10">
 
-            <div class="aboutme-box w-2/5 aboutme-box-reveal">
+            <!-- About Me Card Primary -->
+            <div class="aboutme-card-primary w-2/5 aboutme-box-reveal">
     
-                <div class="aboutme-box__content">
+                <div class="aboutme-card-primary__content">
 
-                    <p>Mi Nombre es Jeyker Mendoza, Soy un desarrolador backend, naci en venezuela y actualmente estudio en la universidad IUJO ubicada en barquisimeto</p>
+                    <p>Mi Nombre es Jeyker Mendoza, Soy un desarrollador backend, naci en Venezuela y actualmente estudio en la universidad IUJO ubicada en Barquisimeto</p>
 
                 </div>
     
             </div>
+            <!-- Here End About Me Card Primary -->
 
+            <!-- Perfil Image -->
             <div class="container-image-animated">
                 
                 <div class="container-img-perfil">
                     <img src="./img/WhatsApp Image 2024-07-13 at 8.45.51 PM.jpeg" alt="Jeyker Mendoza" class="img-perfil">
                 </div>
             </div>
-    
-            <div class="aboutme-box w-2/5 aboutme-box-reveal-2">
-    
-                <div class="aboutme-box__content">
+            <!-- Here End Perfil Image -->
 
-                    <p>Mis Fuertes son HTML, CSS Y PHP, estoy constantemente expadiendo mi conocimiento con nuevas tegnologias y herramientas y este año he esta trabajando con el framework Laravel</p>
+            <!-- About Me Card Secondary -->
+            <div class="aboutme-card-secondary w-2/5 aboutme-box-reveal-2">
+    
+                <div class="aboutme-card-secondary__content">
+
+                    <p>Mis Fuertes son HTML, CSS Y PHP, estoy constantemente expadiendo mi conocimiento con nuevas tegnologias y herramientas. He estado trabajando con frameworks y librerias como Tailwindcss y Laravel</p>
 
                 </div>
     
             </div>
-
+            <!-- Here End About Me Card Secondary -->
         </div>
-
+        <!-- Here End Container About Cards and Image -->
     </section>
 
     <!-- Here End Section About Me -->
 
     <!-- Section Technologies -->
 
-    <section class="w-11/12 mx-auto my-4 mt-52">
+    <section class="w-11/12 mx-auto my-4 mt-44 p-10">
 
             <!-- Title Technologies -->
-        <h2 class="text-4xl dark:text-white text-center font-playfair font-bold title-technologies-reveal p-4 mb-8">Tecnologias</h2>
+        <h2 class="text-4xl text-white text-center font-playfair font-bold title-technologies-reveal p-4 mb-8">Technologies</h2>
 
         <div class="grid grid-cols-5 gap-y-10 items-center w-full">
 
@@ -302,55 +308,79 @@
 
     <!-- Section Projects -->
 
-    <section class="flex justify-between items-center w-11/12 mx-auto my-4 mt-52">
+    <section class="flex justify-between items-center w-11/12 mx-auto my-4 mt-60">
 
         <!-- Container Projects -->
         <div class="projects w-full">
                 
-                <h2 class="text-3xl dark:text-white">Proyectos</h2>
+                <h2 class="text-4xl text-white font-playfair font-bold text-center p-4 mb-8 title-projects-reveal">Projects</h2>
                 
-                <div class="grid grid-cols-3 items-center w-full">
+                <div class="grid grid-cols-3 gap-2 items-center w-full">
 
                     <!-- Project Bienes Raices -->
-                    <div class="w-full lg:pl-3 pb-3">
-                        <div class="card p-0">
+                    <div class="w-full lg:pl-3 pb-3 project-primary-reveal">
+                        <div class="card-project-primary card p-0">
             
-                            <img src="image1.jpg" alt="" class="card-img">
+                            <a href="http://cedbago.nyc.dom.my.id/" target="_blank">
+                                <img src="./img/Opera Instantánea_2024-07-22_161904_cedbago.nyc.dom.my.id.png" alt="Imagen Proyecto" class="card-img">
+                            </a>
             
                             <div class="p-6">
-                                <h2 class="card-title">Card title</h2>
+                                
+                                <a href="http://cedbago.nyc.dom.my.id/" class="text-white card-title hover:text-indigo-600 font-source" target="_blank">
+                                    Devstagram
+                                </a>
+
                                 <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque esse, dolorum beatae odit omnis excepturi perspiciatis, magnam nesciunt ullam dicta aut ipsam corrupti dolores quisquam neque enim odio nisi! Nostrum?
+                                    <p class="text-white mt-2 font-source">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque esse, dolorum beatae odit omnis excepturi perspiciatis, magnam nesciunt ullam dicta aut ipsam corrupti dolores quisquam neque enim odio nisi! Nostrum?
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project App Salon  -->
-                    <div class="w-full lg:pl-3 pb-3">
-                        <div class="card p-0">
+                    <div class="w-full lg:pl-3 pb-3 project-secondary-reveal">
+                        <div class="card-project-primary card p-0">
             
-                            <img src="image1.jpg" alt="" class="card-img">
+                            <a href="#" target="_blank">
+                                <img src="./img/BienesRaices.png" alt="" class="card-img">
+                            </a>
             
                             <div class="p-6">
-                                <h2 class="card-title">Card title</h2>
+
+                                <a href="#" target="_blank" class="card-title text-white hover:text-indigo-600 font-source">
+                                    Bienes Raices
+                                </a>
+
                                 <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque esse, dolorum beatae odit omnis excepturi perspiciatis, magnam nesciunt ullam dicta aut ipsam corrupti dolores quisquam neque enim odio nisi! Nostrum?
+                                    <p class="text-white mt-2 font-source">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque esse, dolorum beatae odit omnis excepturi perspiciatis, magnam nesciunt ullam dicta aut ipsam corrupti dolores quisquam neque enim odio nisi! Nostrum?
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project Devstagram -->
-                    <div class="w-full lg:pl-3 pb-3">
-                        <div class="card p-0">
+                    <div class="w-full lg:pl-3 pb-3 project-tertiary-reveal">
+                        <div class="card-project-primary card p-0">
             
-                            <img src="image1.jpg" alt="" class="card-img">
+                            <a href="#" target="_blank">
+                                <img src="./img/AppSalon.png" alt="" class="card-img">
+                            </a>
             
                             <div class="p-6">
-                                <h2 class="card-title">Card title</h2>
+                                
+                                <a href="#" target="_blank" class="card-title text-white hover:text-indigo-600 font-source">
+                                    App Salon
+                                </a>
+
                                 <div class="card-body">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque esse, dolorum beatae odit omnis excepturi perspiciatis, magnam nesciunt ullam dicta aut ipsam corrupti dolores quisquam neque enim odio nisi! Nostrum?
+                                    <p class="text-white mt-2 font-source">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque esse, dolorum beatae odit omnis excepturi perspiciatis, magnam nesciunt ullam dicta aut ipsam corrupti dolores quisquam neque enim odio nisi! Nostrum?
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -365,29 +395,51 @@
 
     <!-- Footer -->
     <footer class="mt-32">
-        
-        <div class="w-1/2 mx-auto py-14">
 
-            <div class="flex justify-between">
+        <!-- Container Contact Icons -->
+        <div class="w-1/2 mx-auto py-14 flex justify-between">
 
                 <!-- Icon Instagram -->
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="45"  height="45"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
+                <div class="contact-icon-instagram">
+                    <a href="https://www.instagram.com/jeykermendoza?igsh=a3p2am5kMjMxdWZp" target="_blank">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="45"  height="45"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
+                    </a>
+                </div>
+                <!-- Here End Icon Instagram -->
 
                 <!-- Icon Whatsapp -->
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="45"  height="45"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+                <div class="contact-icon-whatsapp">
+                    <a href="https://wa.me/04245652392" target="_blank">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="45"  height="45"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+                    </a>
+                </div>
+                <!-- Here End Icon Whatsapp -->
 
                 <!-- Icon Linkedin -->
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="45"  height="45"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M8 11l0 5" /><path d="M8 8l0 .01" /><path d="M12 16l0 -5" /><path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg>
+                <div class="contact-icon-linkedin">
+                    <a href="#" target="_blank">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="45"  height="45"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M8 11l0 5" /><path d="M8 8l0 .01" /><path d="M12 16l0 -5" /><path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg>
+                    </a>
+                </div>
+                <!-- Here End Icon Linkedin -->
 
                 <!-- Icon Workana -->
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="45"  height="45"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-world-longitude"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M11.5 3a11.2 11.2 0 0 0 0 18" /><path d="M12.5 3a11.2 11.2 0 0 1 0 18" /><path d="M12 3l0 18" /></svg>
+                <div class="contact-icon-workana">
+                    <a href="#" target="_blank">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="45"  height="45"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-world-longitude"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M11.5 3a11.2 11.2 0 0 0 0 18" /><path d="M12.5 3a11.2 11.2 0 0 1 0 18" /><path d="M12 3l0 18" /></svg>
+                    </a>
+                </div>
+                <!-- Here End Icon Workana -->
 
-                <!-- Icon Github -->
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="45"  height="45"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
-            </div> 
-
-
+            <!-- Icon Github -->
+                <div class="contact-icon-github">
+                    <a href="#" target="_blank">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="45"  height="45"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+                    </a>
+                </div>
+            <!-- Here End Icon Github --> 
         </div>
+    <!-- Here End Container Contact Icons -->
 
     </footer>
     <!-- Here End Footer -->
@@ -413,6 +465,10 @@
             ScrollReveal().reveal('.title-technologies-reveal', { delay: 600, origin: 'top'});
             ScrollReveal().reveal('.icon-primary-reveal', { delay: 600, origin: 'left'});
             ScrollReveal().reveal('.icon-secondary-reveal', { delay: 600, origin: 'right'});
+            ScrollReveal().reveal('.title-projects-reveal', { delay: 600, origin: 'top'});
+            ScrollReveal().reveal('.project-primary-reveal', { delay: 600, origin: 'left'});
+            ScrollReveal().reveal('.project-secondary-reveal', { delay: 600, origin: 'left'});
+            ScrollReveal().reveal('.project-tertiary-reveal', { delay: 600, origin: 'left'});
     </script>
 </body>
 </html>

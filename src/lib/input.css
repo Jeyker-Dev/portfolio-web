@@ -316,8 +316,11 @@
     transition: transform 0.5s;
   }
 
-  /* Cards About Me */
-.aboutme-box
+/* Cards About Me */
+
+/* ABOUT ME CARD SECONDARY */
+
+.aboutme-card-primary
 {
   position: relative;
   width: 320px;
@@ -333,7 +336,7 @@
   -o-transition: 0.5s;
 }
 
-.aboutme-box::before
+.aboutme-card-primary::before
 {
   content: '';
   position: absolute;
@@ -341,7 +344,7 @@
   left: 50px;
   width: 50%;
   height: 100%;
-  background-color: #d81b60;
+  background-color: #12adb8;
   border-radius: 8px;
   transform: skewX(15deg);
   transition: 0.5s;
@@ -359,7 +362,7 @@
   -o-transition: 0.5s;
 }
 
-.aboutme-box::after
+.aboutme-card-primary::after
 {
   content: '';
   position: absolute;
@@ -367,7 +370,7 @@
   left: 50px;
   width: 50%;
   height: 100%;
-  background-color: #d81b60;
+  background-color: #12adb8;
   border-radius: 8px;
   transform: skewX(15deg);
   transition: 0.5s;
@@ -388,8 +391,8 @@
   -webkit-filter: blur(30px);
 }
 
-.aboutme-box:hover::before,
-.aboutme-box:hover::after
+.aboutme-card-primary:hover::before,
+.aboutme-card-primary:hover::after
 {
   transform: skewX(0deg);
   left: 20px;
@@ -400,18 +403,12 @@
   -o-transform: skewX(0deg);
 }
 
-.aboutme-box:nth-child(1)::before,
-.aboutme-box:nth-child(1)::after
-{
-
-}
-
-.aboutme-box__content
+.aboutme-card-primary__content
 {
   z-index: 1;
 }
 
-.aboutme-box__content
+.aboutme-card-primary__content
 {
   position: relative;
   left: 0;
@@ -437,11 +434,135 @@
   -o-transition: 0.5s;
 }
 
-.aboutme-box:hover .aboutme-box__content
+.aboutme-card-primary:hover .aboutme-card-primary__content
 {
   left: 10px;
   padding: 60px 60px;
 }
+
+/* ABOUT ME CARD SECONDARY */
+
+.aboutme-card-secondary
+{
+  position: relative;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 30px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.aboutme-card-secondary::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  background-color: #3e12b8;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-transform: skewX(15deg);
+  -moz-transform: skewX(15deg);
+  -ms-transform: skewX(15deg);
+  -o-transform: skewX(15deg);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.aboutme-card-secondary::after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  background-color: #3e12b8;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+  filter: blur(30px);
+  transition: 0.5s;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-transform: skewX(15deg);
+  -moz-transform: skewX(15deg);
+  -ms-transform: skewX(15deg);
+  -o-transform: skewX(15deg);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-filter: blur(30px);
+}
+
+.aboutme-card-secondary:hover::before,
+.aboutme-card-secondary:hover::after
+{
+  transform: skewX(0deg);
+  left: 20px;
+  width: calc(100% - 20px);
+  -webkit-transform: skewX(0deg);
+  -moz-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  -o-transform: skewX(0deg);
+}
+
+.aboutme-card-secondary__content
+{
+  z-index: 1;
+}
+
+.aboutme-card-secondary__content
+{
+  position: relative;
+  left: 0;
+  padding: 20px 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 15px  rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  transition: 0.5s;
+  color: #fff;
+  z-index: 1;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-transform: 0.5s;
+  -moz-transform: 0.5s;
+  -ms-transform: 0.5s;
+  -o-transform: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.aboutme-card-secondary:hover .aboutme-card-secondary__content
+{
+  left: 10px;
+  padding: 60px 60px;
+}
+
+/* ABOUT ME PERFIL IMAGE */
 
 .container-image-animated
 {
@@ -806,23 +927,9 @@
   transition: fill 0.3s ease, color 0.3s ease;
 }
 
-.card-icon-php:hover {
+.card-icon-php {
   background-color: rgba(59, 130, 246, 0.2); /* Azul suave con transparencia usando #3b82f6 */
   box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2); /* Sombra con el mismo color azul #3b82f6 */
-  backdrop-filter: blur(10px);
-}
-
-.card-icon-php:hover svg {
-  fill: #3b82f6; /* Cambia el color de relleno del SVG a #3b82f6 */
-}
-
-.card-icon-php:hover span {
-  color: #3b82f6; /* Cambia el color del texto a #3b82f6 */
-}
-
-.card-icon-php {
-  background-color: rgba(59, 130, 246, 0.5); /* Azul suave con transparencia usando #3b82f6 */
-  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.5); /* Sombra con el mismo color azul #3b82f6 */
   backdrop-filter: blur(10px);
 }
 
@@ -831,6 +938,20 @@
 }
 
 .card-icon-php span {
+  color: #3b82f6; /* Cambia el color del texto a #3b82f6 */
+}
+
+.card-icon-php:hover {
+  background-color: rgba(59, 130, 246, 0.5); /* Azul suave con transparencia usando #3b82f6 */
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.5); /* Sombra con el mismo color azul #3b82f6 */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-php:hover svg {
+  fill: #3b82f6; /* Cambia el color de relleno del SVG a #3b82f6 */
+}
+
+.card-icon-php:hover span {
   color: #3b82f6; /* Cambia el color del texto a #3b82f6 */
 }
 
@@ -956,9 +1077,94 @@
 }
 
 .card-icon-sql:hover svg {
-  color: #6366f2; /* Cambia el color de relleno del SVG a azul */
+  color: #6366f2;
 }
 
 .card-icon-sql:hover span {
-  color: #6366f2; /* Cambia el color del texto a azul */
+  color: #6366f2; 
+}
+
+/* CARDS PROJECTS */
+
+.card-project-primary
+{
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* CONTACT ICONS */
+
+/* ICON INSTAGRAM */
+
+.contact-icon-instagram:hover svg
+{
+  background-color: rgba(255, 18, 197, 0.2);
+  box-shadow: 0 5px 15px rgba(255, 18, 197, 0.2);
+  fill: #FF12C5;
+  cursor: pointer;
+  transition: all ease 1.3s;
+  -webkit-transition: all ease 1.3s;
+  -moz-transition: all ease 1.3s;
+  -ms-transition: all ease 1.3s;
+  -o-transition: all ease 1.3s;
+}
+
+/* ICON WHATSAPP */
+
+.contact-icon-whatsapp:hover svg
+{
+  background-color: rgba(19, 250, 104, 0.2);
+  box-shadow: 0 5px 15px rgba(19, 250, 104, 0.2);
+  fill: rgba(19, 250, 104);
+  cursor: pointer;
+  transition: all ease 1.3s;
+  -webkit-transition: all ease 1.3s;
+  -moz-transition: all ease 1.3s;
+  -ms-transition: all ease 1.3s;
+  -o-transition: all ease 1.3s;
+}
+
+/* ICON LINKEDIN */
+
+.contact-icon-linkedin:hover svg
+{
+  background-color: rgba(19, 215, 250, 0.2);
+  box-shadow: 0 5px 15px rgba(19, 215, 250, 0.2);
+  fill: rgba(19, 215, 250);
+  cursor: pointer;
+  transition: all ease 1.3s;
+  -webkit-transition: all ease 1.3s;
+  -moz-transition: all ease 1.3s;
+  -ms-transition: all ease 1.3s;
+  -o-transition: all ease 1.3s;
+}
+
+/* ICON WORKANA */
+
+.contact-icon-workana:hover svg
+{
+  background-color: rgba(250, 246, 19, 0.2);
+  box-shadow: 0 5px 15px rgba(250, 246, 19, 0.2);
+  fill: rgba(250, 246, 19);
+  cursor: pointer;
+  transition: all ease 1.3s;
+  -webkit-transition: all ease 1.3s;
+  -moz-transition: all ease 1.3s;
+  -ms-transition: all ease 1.3s;
+  -o-transition: all ease 1.3s;
+}
+
+/* ICON GITHUB */
+
+.contact-icon-github:hover svg
+{
+  background-color: rgba(127, 19, 250, 0.2);
+  box-shadow: 0 5px 15px rgba(127, 19, 250, 0.2);
+  fill: rgba(127, 19, 250);
+  cursor: pointer;
+  transition: all ease 1.3s;
+  -webkit-transition: all ease 1.3s;
+  -moz-transition: all ease 1.3s;
+  -ms-transition: all ease 1.3s;
+  -o-transition: all ease 1.3s;
 }
