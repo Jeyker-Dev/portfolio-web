@@ -583,7 +583,7 @@
   content: '';
   position: absolute;
   inset: -10px 120px;
-  background: linear-gradient(315deg, #00ccff, #d400d4);
+  background: linear-gradient(315deg, #00ccff, #3e12b8);
   transition: 0.5s;
   animation: animate 4s linear infinite;
   -webkit-transition: 0.5s;
@@ -1168,3 +1168,4 @@
   -ms-transition: all ease 1.3s;
   -o-transition: all ease 1.3s;
 }
+

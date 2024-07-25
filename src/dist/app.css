@@ -879,6 +879,10 @@ video {
   row-gap: 2.5rem;
 }
 
+.\!scroll-smooth{
+  scroll-behavior: smooth !important;
+}
+
 .rounded{
   border-radius: 0.25rem;
 }
@@ -1727,7 +1731,7 @@ video {
   content: '';
   position: absolute;
   inset: -10px 120px;
-  background: linear-gradient(315deg, #00ccff, #d400d4);
+  background: linear-gradient(315deg, #00ccff, #3e12b8);
   transition: 0.5s;
   animation: animate 4s linear infinite;
   -webkit-transition: 0.5s;
@@ -2448,3 +2452,4 @@ video {
     padding-left: 0.75rem;
   }
 }
+
