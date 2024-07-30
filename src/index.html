@@ -11,43 +11,51 @@
 <body class="bg-indigo-990 h-screen">
 
     <!-- Header -->
-    <header class="sticky z-50 top-0 flex justify-between items-center w-full backdrop-blur-3xl transition-colors border-indigo-50/[0.06] bg-indigo-990/75">
+    <header class="sticky z-50 top-0 flex justify-between md:items-center w-full backdrop-blur-3xl transition-colors border-indigo-50/[0.06] bg-indigo-990/75">
         <!-- Logo -->
-        <div class="ml-8 pl-3 w-1/4">
+        <div class="ml-8 pl-3 w-1/3 mt-5 md:mt-0">
 
-            <a href="#index" class="font-source">
-                <span class="text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-black"> < </span>
-                <span class="text-2xl text-white">Jeyker-Dev</span>
-                <span class="text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-black"> /> </span>
+            <a href="#index" class="font-source font-bold">
+                <span class="text-sm sm:text-base lg:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-black"> < </span>
+                <span class="text-sm sm:text-base lg:text-2xl text-white">Jeyker-Dev</span>
+                <span class="text-sm sm:text-base lg:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-black"> /> </span>
             </a>
 
         </div>
         <!-- Here End Logo -->
 
         <!-- Navegation -->
-        <nav class="mr-3 pr-3 w-1/2">
-            <ul class="flex flex-row justify-between items-center w-full p-3">
+        <nav class="mr-3 pr-3 w-5/12 sm:w-9/12 lg:w-1/2">
 
-                <li class="w-1/4">
-                    <a href="#aboutme" class="font-playfair text-white hover:text-violet-400 p-2 md:text-xl relative animation-line w-full flex justify-center items-center">
+            <!--    Button Hamburguer -->
+            <input type="checkbox" name="hamburguer" id="hamburguer" class="peer" hidden>
+            <label for="hamburguer" class="peer-checked:hamburguer block z-20 cursor-pointer md:hidden transition p-5 hover:bg-gray-200 dark:hover:bg-slate-700 rounded">
+                <div class="h-0.5 w-6 bg-black dark:bg-white transition mx-auto"></div>
+                <div class="mt-2 h-0.5 w-6 bg-black dark:bg-white transition mx-auto"></div>
+            </label>
+
+            <ul class="flex flex-col md:flex-row justify-between items-center w-full p-3 inset-0 translate-x-[-250%] peer-checked:translate-x-0 md:translate-x-0">
+
+                <li class="w-full lg:w-1/4">
+                    <a href="#aboutme" class="font-playfair text-white hover:text-violet-400 p-2 text-sm sm:text-base lg:text-xl relative animation-line w-full flex justify-center items-center transition tracking-wide">
                         About Me
                     </a>
                 </li>
 
-                <li class="w-1/4">
-                    <a href="#technologies" class="font-playfair text-white hover:text-violet-400 p-2 md:text-xl relative animation-line animation-line-roll w-full flex justify-center items-center">
+                <li class="w-full lg:w-1/4">
+                    <a href="#technologies" class="font-playfair text-white hover:text-violet-400 p-2 text-sm sm:text-base lg:text-xl relative animation-line animation-line-roll w-full flex justify-center items-center transition tracking-wide">
                         Technologies
                     </a>
                 </li>
 
-                <li class="w-1/4">
-                    <a href="#projects" class="font-playfair text-white hover:text-violet-400 p-2 md:text-xl relative animation-line animation-line-pulse w-full flex justify-center items-center">
+                <li class="w-full lg:w-1/4">
+                    <a href="#projects" class="font-playfair text-white hover:text-violet-400 p-2 text-sm sm:text-base lg:text-xl relative animation-line animation-line-pulse w-full flex justify-center items-center transition tracking-wide">
                         Projects
                     </a>
                 </li>
 
-                <li class="w-1/4">
-                    <a href="#contact" class="font-playfair text-white hover:text-violet-400 p-2 md:text-xl relative animation-line animation-line-bounce w-full flex justify-center items-center">
+                <li class="w-full lg:w-1/4">
+                    <a href="#contact" class="font-playfair text-white hover:text-violet-400 p-2 text-sm sm:text-base lg:text-xl relative animation-line animation-line-bounce w-full flex justify-center items-center transition tracking-wide">
                         Contact
                     </a>
                 </li>
@@ -61,64 +69,77 @@
     <!-- Main -->
     <main class="flex justify-center items-center bg-[url('../img/bg.png')] bg-cover bg-center w-11/12 h-5/6 mx-auto relative fade-top rounded-b-[50px] py-4 my-4 main-reveal" id="index">
 
-        <div class="text-center flex justify-center items-center flex-col gap-2 min-h-96 my-48">
+        <!-- Container Body Main -->
+        <div class="text-center flex justify-center items-center flex-col gap-2 min-h-96 my-48 w-full">
 
-            <div class="p-4 bg-gradient-to-r from-indigo-700 to-violet-950 w-1/3 rounded-3xl flex items-center cv-reveal mb-10">
-                <span class="text-white font-source font-semibold text-xl ml-5">Click</span>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="32"  height="32"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right text-white ml-7 icon-arrow"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+            <!-- Container Button CV -->
+            <div class="p-4 bg-gradient-to-r from-indigo-700 to-violet-950 w-11/12 sm:w-6/12 lg:w-4/12 rounded-3xl flex items-center cv-reveal mb-10">
+                <span class="text-white font-source font-semibold text-lg sm:text-base md:text-lg lg:text-xl ml-5">Click</span>
+                <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right text-white ml-3 sm:ml-2 lg:ml-5 icon-arrow w-6 h-6 lg:w-8 lg:h-8"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
 
-                <button class="z-20 btn bg-white text-black uppercase font-semibold flex justify-center items-center focus:ring hover:bg-indigo-700 hover:text-white mx-auto py-2 px-3">
+                <button class="z-20 btn bg-white text-black uppercase font-semibold flex justify-center items-center focus:ring hover:bg-indigo-700 hover:text-white mx-auto text-xs sm:text-sm lg:text-base cursor-pointer">
                     Descargar Cv
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download ml-1 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
                 </button>
 
             </div>
 
-            <h1 class="text-4xl text-white font-playfair p-4 w-11/12 title-reveal mb-6">Web Developer Creating digital solutions for your business</h1>
-            <p class="text-xl text-white font-source text-center w-4/5 text-reveal">I bring creativity and technical expertise to design and develop websites that enhance your online presence and connect you with your customers.
+            <!-- Title Main -->
+            <h1 class="font-bold text-xl sm:text-2xl lg:text-4xl text-white font-playfair p-4 w-11/12 title-reveal lg:mb-6">Web Developer Creating digital solutions for your business</h1>
+            <!-- Text Main -->
+            <p class="text-sm sm:text-base lg:text-xl text-white font-source text-center w-7/12 lg:w-4/5 text-reveal">I bring creativity and technical expertise to design and develop websites that enhance your online presence and connect you with your customers.
             </p>
 
-            
-            <h2 class="font-playfair text-white font-bold text-2xl mt-5 p-3 mb-4 softskill-text-reveal">SoftSkills</h2>
+            <!-- Title SoftSkills -->
+            <h2 class="font-playfair text-white font-bold text-xl sm:text-2xl lg:text-3xl mt-5 p-3 mb-4 softskill-text-reveal">SoftSkills</h2>
 
-            <div class="w-1/2 flex justify-around softskills-primary-reveal">
+            <!-- Container SoftSkills Primary -->
+            <div class="w-10/12 lg:w-6/12 flex justify-around gap-5 lg:gap-7 softskills-primary-reveal">
 
-                <div class="nube-primary skill-primary-reveal">
-                        <span class="text-white text-2xl flex items-center justify-center">creativity
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-bulb ml-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 11a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" /><path d="M12 2a1 1 0 0 1 .993 .883l.007 .117v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a1 1 0 0 1 1 -1z" /><path d="M21 11a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" /><path d="M4.893 4.893a1 1 0 0 1 1.32 -.083l.094 .083l.7 .7a1 1 0 0 1 -1.32 1.497l-.094 -.083l-.7 -.7a1 1 0 0 1 0 -1.414z" /><path d="M17.693 4.893a1 1 0 0 1 1.497 1.32l-.083 .094l-.7 .7a1 1 0 0 1 -1.497 -1.32l.083 -.094l.7 -.7z" /><path d="M14 18a1 1 0 0 1 1 1a3 3 0 0 1 -6 0a1 1 0 0 1 .883 -.993l.117 -.007h4z" /><path d="M12 6a6 6 0 0 1 3.6 10.8a1 1 0 0 1 -.471 .192l-.129 .008h-6a1 1 0 0 1 -.6 -.2a6 6 0 0 1 3.6 -10.8z" /></svg>
+                <!-- Creativity SoftSkills -->
+                <div class="w-5/12 nube-primary skill-primary-reveal p-3">
+                        <span class="text-white text-sm lg:text-2xl flex items-center justify-center">
+                            creativity
+                            <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-bulb ml-1 lg:ml-2 w-4 h-4 lg:w-8 lg:h-8"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 11a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" /><path d="M12 2a1 1 0 0 1 .993 .883l.007 .117v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a1 1 0 0 1 1 -1z" /><path d="M21 11a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" /><path d="M4.893 4.893a1 1 0 0 1 1.32 -.083l.094 .083l.7 .7a1 1 0 0 1 -1.32 1.497l-.094 -.083l-.7 -.7a1 1 0 0 1 0 -1.414z" /><path d="M17.693 4.893a1 1 0 0 1 1.497 1.32l-.083 .094l-.7 .7a1 1 0 0 1 -1.497 -1.32l.083 -.094l.7 -.7z" /><path d="M14 18a1 1 0 0 1 1 1a3 3 0 0 1 -6 0a1 1 0 0 1 .883 -.993l.117 -.007h4z" /><path d="M12 6a6 6 0 0 1 3.6 10.8a1 1 0 0 1 -.471 .192l-.129 .008h-6a1 1 0 0 1 -.6 -.2a6 6 0 0 1 3.6 -10.8z" /></svg>
                         </span>
+                        
                 </div>
 
-                <div class="nube-secondary skill-secondary-reveal">
-                    <span class="text-white text-2xl flex items-center justify-center">English
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-badge-cc ml-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 4a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-10a3 3 0 0 1 3 -3zm-10.5 4a2.5 2.5 0 0 0 -2.5 2.5v3a2.5 2.5 0 1 0 5 0a1 1 0 0 0 -2 0a.5 .5 0 1 1 -1 0v-3a.5 .5 0 1 1 1 0a1 1 0 0 0 2 0a2.5 2.5 0 0 0 -2.5 -2.5m7 0a2.5 2.5 0 0 0 -2.5 2.5v3a2.5 2.5 0 1 0 5 0a1 1 0 0 0 -2 0a.5 .5 0 1 1 -1 0v-3a.5 .5 0 1 1 1 0a1 1 0 0 0 2 0a2.5 2.5 0 0 0 -2.5 -2.5" /></svg>
+                <!-- English SoftSkills -->
+                <div class="w-5/12 nube-secondary skill-secondary-reveal p-3">
+                    <span class="text-white text-sm lg:text-2xl flex items-center justify-center">English
+                        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-badge-cc ml-1 lg:ml-2 w-4 h-4 lg:w-8 lg:h-8"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 4a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-10a3 3 0 0 1 3 -3zm-10.5 4a2.5 2.5 0 0 0 -2.5 2.5v3a2.5 2.5 0 1 0 5 0a1 1 0 0 0 -2 0a.5 .5 0 1 1 -1 0v-3a.5 .5 0 1 1 1 0a1 1 0 0 0 2 0a2.5 2.5 0 0 0 -2.5 -2.5m7 0a2.5 2.5 0 0 0 -2.5 2.5v3a2.5 2.5 0 1 0 5 0a1 1 0 0 0 -2 0a.5 .5 0 1 1 -1 0v-3a.5 .5 0 1 1 1 0a1 1 0 0 0 2 0a2.5 2.5 0 0 0 -2.5 -2.5" /></svg>
                     </span>
                 </div>
 
             </div>
 
-            <div class="w-5/6 flex justify-around mt-8 pt-3 softskills-secondary-reveal">
+            <!-- Container SoftSkills Secondary -->
+            <div class="w-10/12 lg:w-5/6 grid grid-rows-2 grid-cols-2 lg:grid-cols-3 lg:grid-rows-1 gap-x-5 lg:gap-x-0 gap-y-14 lg:gap-y-0 mt-8 pt-3 softskills-secondary-reveal">
 
-                <div class="nube-third skill-third-reveal">
-                        <span class="text-white text-2xl flex items-center justify-center">Competitive
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-award ml-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.496 13.983l1.966 3.406a1.001 1.001 0 0 1 -.705 1.488l-.113 .011l-.112 -.001l-2.933 -.19l-1.303 2.636a1.001 1.001 0 0 1 -1.608 .26l-.082 -.094l-.072 -.11l-1.968 -3.407a8.994 8.994 0 0 0 6.93 -3.999z" /><path d="M11.43 17.982l-1.966 3.408a1.001 1.001 0 0 1 -1.622 .157l-.076 -.1l-.064 -.114l-1.304 -2.635l-2.931 .19a1.001 1.001 0 0 1 -1.022 -1.29l.04 -.107l.05 -.1l1.968 -3.409a8.994 8.994 0 0 0 6.927 4.001z" /><path d="M12 2l.24 .004a7 7 0 0 1 6.76 6.996l-.003 .193l-.007 .192l-.018 .245l-.026 .242l-.024 .178a6.985 6.985 0 0 1 -.317 1.268l-.116 .308l-.153 .348a7.001 7.001 0 0 1 -12.688 -.028l-.13 -.297l-.052 -.133l-.08 -.217l-.095 -.294a6.96 6.96 0 0 1 -.093 -.344l-.06 -.271l-.049 -.271l-.02 -.139l-.039 -.323l-.024 -.365l-.006 -.292a7 7 0 0 1 6.76 -6.996l.24 -.004z" /></svg>
+                <!-- Competitive SoftSkills -->
+                <div class="lg:w-9/12 nube-third skill-third-reveal col-start-1 col-span-2 lg:col-span-1 lg:ml-0 p-3">
+                        <span class="text-white text-sm lg:text-2xl flex items-center justify-center">Competitive
+                            <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-award ml-1 lg:ml-2 w-4 h-4 lg:w-8 lg:h-8"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.496 13.983l1.966 3.406a1.001 1.001 0 0 1 -.705 1.488l-.113 .011l-.112 -.001l-2.933 -.19l-1.303 2.636a1.001 1.001 0 0 1 -1.608 .26l-.082 -.094l-.072 -.11l-1.968 -3.407a8.994 8.994 0 0 0 6.93 -3.999z" /><path d="M11.43 17.982l-1.966 3.408a1.001 1.001 0 0 1 -1.622 .157l-.076 -.1l-.064 -.114l-1.304 -2.635l-2.931 .19a1.001 1.001 0 0 1 -1.022 -1.29l.04 -.107l.05 -.1l1.968 -3.409a8.994 8.994 0 0 0 6.927 4.001z" /><path d="M12 2l.24 .004a7 7 0 0 1 6.76 6.996l-.003 .193l-.007 .192l-.018 .245l-.026 .242l-.024 .178a6.985 6.985 0 0 1 -.317 1.268l-.116 .308l-.153 .348a7.001 7.001 0 0 1 -12.688 -.028l-.13 -.297l-.052 -.133l-.08 -.217l-.095 -.294a6.96 6.96 0 0 1 -.093 -.344l-.06 -.271l-.049 -.271l-.02 -.139l-.039 -.323l-.024 -.365l-.006 -.292a7 7 0 0 1 6.76 -6.996l.24 -.004z" /></svg>
                         </span>
                 </div>
 
-                <div class="nube-fourth skill-fourth-reveal">
-                    <span class="text-white text-2xl flex items-center justify-center">Adaptability
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-accessible ml-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1" /><circle cx="12" cy="7.5" r=".5" fill="currentColor" /></svg>
+                <!-- Adaptability SoftSkills -->
+                <div class="lg:w-9/12 nube-fourth skill-fourth-reveal row-start-2 lg:row-start-1 lg:col-start-2 p-3">
+                    <span class="text-white text-sm lg:text-2xl flex items-center justify-center">Adaptability
+                        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-accessible ml-1 lg:ml-2 w-4 h-4 lg:w-8 lg:h-8"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1" /><circle cx="12" cy="7.5" r=".5" fill="currentColor" /></svg>
                     </span>
                 </div>
 
-                <div class="nube-fifth skill-fifth-reveal">
-                    <span class="text-white text-2xl flex items-center justify-center">Responsibility
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-badge-cc ml-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 4a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-10a3 3 0 0 1 3 -3zm-10.5 4a2.5 2.5 0 0 0 -2.5 2.5v3a2.5 2.5 0 1 0 5 0a1 1 0 0 0 -2 0a.5 .5 0 1 1 -1 0v-3a.5 .5 0 1 1 1 0a1 1 0 0 0 2 0a2.5 2.5 0 0 0 -2.5 -2.5m7 0a2.5 2.5 0 0 0 -2.5 2.5v3a2.5 2.5 0 1 0 5 0a1 1 0 0 0 -2 0a.5 .5 0 1 1 -1 0v-3a.5 .5 0 1 1 1 0a1 1 0 0 0 2 0a2.5 2.5 0 0 0 -2.5 -2.5" /></svg>
+                <!-- Responsability SoftSkills -->
+                <div class="lg:w-9/12 nube-fifth skill-fifth-reveal col-start-2 row-start-2 lg:row-start-1 lg:col-start-3 p-3">
+                    <span class="text-white text-sm lg:text-2xl flex items-center justify-center">Responsibility
+                        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-badge-cc ml-1 lg:ml-2 w-4 h-4 lg:w-8 lg:h-8"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 4a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-10a3 3 0 0 1 3 -3zm-10.5 4a2.5 2.5 0 0 0 -2.5 2.5v3a2.5 2.5 0 1 0 5 0a1 1 0 0 0 -2 0a.5 .5 0 1 1 -1 0v-3a.5 .5 0 1 1 1 0a1 1 0 0 0 2 0a2.5 2.5 0 0 0 -2.5 -2.5m7 0a2.5 2.5 0 0 0 -2.5 2.5v3a2.5 2.5 0 1 0 5 0a1 1 0 0 0 -2 0a.5 .5 0 1 1 -1 0v-3a.5 .5 0 1 1 1 0a1 1 0 0 0 2 0a2.5 2.5 0 0 0 -2.5 -2.5" /></svg>
                     </span>
                 </div>
 
         </div>
-
+        <!-- Here End Container Body Main -->
     </main>
     <!-- Here End Main -->
 
@@ -127,17 +148,17 @@
     <section class="flex flex-col justify-center items-center w-11/12 mx-auto my-4 mt-52" id="aboutme">
 
             <!-- Title About Me -->
-            <h2 class="text-4xl text-white font-bold font-playfair title-aboutme-reveal">About Me</h2>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl text-white font-bold font-playfair title-aboutme-reveal">About Me</h2>
 
             <!-- Container About Cards and Image -->
-        <div class="aboutme-box-container flex justify-center items-center w-full gap-3 py-10">
+        <div class="aboutme-box-container flex flex-col sm:flex-row justify-center items-center w-full gap-3 py-10">
 
             <!-- About Me Card Primary -->
-            <div class="aboutme-card-primary w-2/5 aboutme-box-reveal">
+            <div class="aboutme-card-primary w-52 h-64 sm:w-60 sm:h-72 lg:w-[320px] lg:h-[400px] aboutme-box-reveal">
     
-                <div class="aboutme-card-primary__content">
+                <div class="aboutme-card-primary__content py-6 px-12 sm:py-3 sm:px-8 lg:py-[20px] lg:px-[50px]">
 
-                    <p class="font-source">
+                    <p class="font-source text-xs sm:text-sm">
                         My name is Jeyker Mendoza, I am a Backend developer, I was born in Venezuela and currently studying at the IUJO University located in Barquisimeto
                     </p>
 
@@ -147,20 +168,20 @@
             <!-- Here End About Me Card Primary -->
 
             <!-- Perfil Image -->
-            <div class="container-image-animated">
+            <div class="container-image-animated w-60 h-60 sm:w-64 sm:h-64 lg:w-80 lg:h-80">
                 
                 <div class="container-img-perfil">
-                    <img src="./img/WhatsApp Image 2024-07-13 at 8.45.51 PM.jpeg" alt="Jeyker Mendoza" class="img-perfil">
+                    <img src="./img/WhatsApp Image 2024-07-13 at 8.45.51 PM.jpeg" alt="Jeyker Mendoza" class="img-perfil ">
                 </div>
             </div>
             <!-- Here End Perfil Image -->
 
             <!-- About Me Card Secondary -->
-            <div class="aboutme-card-secondary w-2/5 aboutme-box-reveal-2">
+            <div class="aboutme-card-secondary w-52 h-64 sm:w-60 sm:h-72 lg:w-[320px] lg:h-[400px] aboutme-box-reveal-2">
     
-                <div class="aboutme-card-secondary__content">
+                <div class="aboutme-card-secondary__content py-4 px-10 sm:py-3 sm:px-6 lg:py-[20px] lg:px-[50px]">
 
-                    <p class="font-source">
+                    <p class="font-source text-xs sm:text-sm lg:text-base">
                     My strongs are HTML, CSS and PHP, I am constantly expanding my knowledge with new tegnologies and tools.I've been working with Frameworks and Libraries like Tailwindcs and Laravel
                     </p>
 
@@ -176,20 +197,20 @@
 
     <!-- Section Technologies -->
 
-    <section class="w-11/12 mx-auto my-4 mt-44 p-10" id="technologies">
+    <section class="w-full mx-auto my-4 sm:mt-20 lg:mt-44 p-10" id="technologies">
 
             <!-- Title Technologies -->
-        <h2 class="text-4xl text-white text-center font-playfair font-bold title-technologies-reveal p-4 mb-8">Technologies</h2>
+        <h2 class="text-2xl md:text-3xl lg:text-4xl text-white text-center font-playfair font-bold title-technologies-reveal p-4 mb-8">Technologies</h2>
 
-        <div class="grid grid-cols-5 gap-y-10 items-center w-full">
+        <div class="grid grid-cols-3 lg:grid-cols-5 gap-y-10 items-center w-full">
 
                 <!-- Icon HTML -->
             <div class="flex items-center flex-col p-4 icon-primary-reveal"> 
 
-                <div class="card-icon-html transition w-4/5 flex flex-col items-center p-3 rounded">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="60"  height="60"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-html5 "><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" /></svg>
+                <div class="card-icon-html transition w-full sm:w-4/5 flex flex-col items-center p-3 rounded">
+                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-html5 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 "><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" /></svg>
 
-                <span class="text-2xl uppercase font-bold text-center text-white">Html</span>
+                <span class="text-sm  md:text-lg lg:text-2xl uppercase font-bold text-center text-white">Html</span>
 
                 </div>
 
@@ -199,10 +220,10 @@
                 <!-- Icon Css -->
             <div class="flex items-center flex-col p-4">
             
-                <div class="card-icon-css w-4/5 flex items-center flex-col p-3 rounded icon-primary-reveal">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="60"  height="60"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-css3"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" /></svg>
+                <div class="card-icon-css w-full sm:w-4/5 flex items-center flex-col p-3 rounded icon-primary-reveal">
+                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-css3 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" /></svg>
 
-                <span class="text-2xl uppercase font-bold text-center text-white">css</span>
+                <span class="text-sm md:text-lg lg:text-2xl uppercase font-bold text-center text-white">css</span>
                 </div>
 
             </div>
@@ -212,10 +233,10 @@
             <!-- Icon Sass -->
             <div class="flex items-center flex-col p-4">
                 
-                <div class="card-icon-sass w-4/5 flex flex-col items-center p-3 rounded icon-primary-reveal">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="60"  height="60"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-sass"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10.523c2.46 -.826 4 -.826 4 -2.155c0 -1.366 -1.347 -1.366 -2.735 -1.366c-1.91 0 -3.352 .49 -4.537 1.748c-.848 .902 -1.027 2.449 -.153 3.307c.973 .956 3.206 1.789 2.884 3.493c-.233 1.235 -1.469 1.823 -2.617 1.202c-.782 -.424 -.454 -1.746 .626 -2.512s2.822 -.992 4.1 -.24c.98 .575 1.046 1.724 .434 2.193" /></svg>
+                <div class="card-icon-sass w-full sm:w-4/5 flex flex-col items-center p-3 rounded icon-primary-reveal">
+                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-sass w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 10.523c2.46 -.826 4 -.826 4 -2.155c0 -1.366 -1.347 -1.366 -2.735 -1.366c-1.91 0 -3.352 .49 -4.537 1.748c-.848 .902 -1.027 2.449 -.153 3.307c.973 .956 3.206 1.789 2.884 3.493c-.233 1.235 -1.469 1.823 -2.617 1.202c-.782 -.424 -.454 -1.746 .626 -2.512s2.822 -.992 4.1 -.24c.98 .575 1.046 1.724 .434 2.193" /></svg>
 
-                <span class="text-2xl uppercase font-bold text-white">sass</span>
+                <span class="text-sm md:text-lg lg:text-2xl uppercase font-bold text-white">sass</span>
                 </div>
 
             </div>
@@ -225,20 +246,20 @@
             <!-- Icon Tailwind -->
             <div class="flex items-center flex-col p-4">
                 
-                <div class="flex flex-col items-center w-4/5 card-icon-tailwind p-3 rounded icon-primary-reveal">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="60"  height="60"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tailwind text-white"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z" /></svg>
+                <div class="flex flex-col items-center w-full sm:w-4/5 card-icon-tailwind p-3 rounded icon-primary-reveal">
+                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tailwind text-white w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z" /></svg>
 
-                <span class="text-2xl uppercase font-bold text-white">tailwind</span>
+                <span class="text-sm md:text-lg lg:text-2xl uppercase font-bold text-white">tailwind</span>
                 </div>
             </div>
 
             <!-- Icon Javascript -->
             <div class="flex items-center flex-col p-4">
                 
-                <div class="card-icon-js flex flex-col items-center w-4/5 p-3 rounded icon-primary-reveal">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="60"  height="60"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-javascript"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M7.5 8h3v8l-2 -1" /><path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" /></svg>
+                <div class="card-icon-js flex flex-col items-center w-full sm:w-4/5 p-3 rounded icon-primary-reveal">
+                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-javascript w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" /><path d="M7.5 8h3v8l-2 -1" /><path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" /></svg>
 
-                    <span class="text-2xl uppercase font-bold text-white">javascript</span>
+                    <span class="text-sm md:text-lg lg:text-2xl uppercase font-bold text-white">javascript</span>
                 </div>
             </div>
 
@@ -247,10 +268,10 @@
             <!-- Icon Nodejs -->
             <div class="flex items-center flex-col p-4">
             
-                <div class="card-icon-node flex flex-col items-center w-4/5 p-3 rounded icon-secondary-reveal">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="60"  height="60"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-nodejs"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 9v8.044a2 2 0 0 1 -2.996 1.734l-1.568 -.9a3 3 0 0 1 -1.436 -2.561v-6.635a3 3 0 0 1 1.436 -2.56l6 -3.667a3 3 0 0 1 3.128 0l6 3.667a3 3 0 0 1 1.436 2.561v6.634a3 3 0 0 1 -1.436 2.56l-6 3.667a3 3 0 0 1 -3.128 0" /><path d="M17 9h-3.5a1.5 1.5 0 0 0 0 3h2a1.5 1.5 0 0 1 0 3h-3.5" /></svg>
+                <div class="card-icon-node flex flex-col items-center w-full sm:w-4/5 p-3 rounded icon-secondary-reveal">
+                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-nodejs w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 9v8.044a2 2 0 0 1 -2.996 1.734l-1.568 -.9a3 3 0 0 1 -1.436 -2.561v-6.635a3 3 0 0 1 1.436 -2.56l6 -3.667a3 3 0 0 1 3.128 0l6 3.667a3 3 0 0 1 1.436 2.561v6.634a3 3 0 0 1 -1.436 2.56l-6 3.667a3 3 0 0 1 -3.128 0" /><path d="M17 9h-3.5a1.5 1.5 0 0 0 0 3h2a1.5 1.5 0 0 1 0 3h-3.5" /></svg>
 
-                <span class="text-2xl uppercase font-bold text-white">nodejs</span>
+                <span class="text-sm md:text-lg lg:text-2xl uppercase font-bold text-white">nodejs</span>
                 </div>
             </div>
 
@@ -259,10 +280,10 @@
             <!-- Icon Php -->
             <div class="flex items-center flex-col p-4">
             
-                <div class="card-icon-php flex flex-col items-center w-4/5 p-3 rounded icon-secondary-reveal">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="60"  height="60"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-php"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-10 0a10 9 0 1 0 20 0a10 9 0 1 0 -20 0" /><path d="M5.5 15l.395 -1.974l.605 -3.026h1.32a1 1 0 0 1 .986 1.164l-.167 1a1 1 0 0 1 -.986 .836h-1.653" /><path d="M15.5 15l.395 -1.974l.605 -3.026h1.32a1 1 0 0 1 .986 1.164l-.167 1a1 1 0 0 1 -.986 .836h-1.653" /><path d="M12 7.5l-1 5.5" /><path d="M11.6 10h2.4l-.5 3" /></svg>
+                <div class="card-icon-php flex flex-col items-center w-full sm:w-4/5 p-3 rounded icon-secondary-reveal">
+                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-php w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-10 0a10 9 0 1 0 20 0a10 9 0 1 0 -20 0" /><path d="M5.5 15l.395 -1.974l.605 -3.026h1.32a1 1 0 0 1 .986 1.164l-.167 1a1 1 0 0 1 -.986 .836h-1.653" /><path d="M15.5 15l.395 -1.974l.605 -3.026h1.32a1 1 0 0 1 .986 1.164l-.167 1a1 1 0 0 1 -.986 .836h-1.653" /><path d="M12 7.5l-1 5.5" /><path d="M11.6 10h2.4l-.5 3" /></svg>
 
-                    <span class="text-2xl uppercase font-bold text-white">php</span>
+                    <span class="text-sm md:text-lg lg:text-2xl uppercase font-bold text-white">php</span>
                 </div>
             </div>
 
@@ -271,10 +292,10 @@
             <!-- Icon Laravel -->
             <div class="flex items-center flex-col p-4">
 
-                <div class="card-icon-laravel flex flex-col items-center w-4/5 p-3 rounded icon-secondary-reveal">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="60"  height="60"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-laravel text-white"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 17l8 5l7 -4v-8l-4 -2.5l4 -2.5l4 2.5v4l-11 6.5l-4 -2.5v-7.5l-4 -2.5z" /><path d="M11 18v4" /><path d="M7 15.5l7 -4" /><path d="M14 7.5v4" /><path d="M14 11.5l4 2.5" /><path d="M11 13v-7.5l-4 -2.5l-4 2.5" /><path d="M7 8l4 -2.5" /><path d="M18 10l4 -2.5" /></svg>
+                <div class="card-icon-laravel flex flex-col items-center w-full sm:w-4/5 p-3 rounded icon-secondary-reveal">
+                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-laravel text-white w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 17l8 5l7 -4v-8l-4 -2.5l4 -2.5l4 2.5v4l-11 6.5l-4 -2.5v-7.5l-4 -2.5z" /><path d="M11 18v4" /><path d="M7 15.5l7 -4" /><path d="M14 7.5v4" /><path d="M14 11.5l4 2.5" /><path d="M11 13v-7.5l-4 -2.5l-4 2.5" /><path d="M7 8l4 -2.5" /><path d="M18 10l4 -2.5" /></svg>
 
-                <span class="text-2xl uppercase font-bold text-white">laravel</span>
+                <span class="text-sm md:text-lg lg:text-2xl uppercase font-bold text-white">laravel</span>
                 </div>
             </div>
 
@@ -283,10 +304,10 @@
             <!-- Icon Git -->
             <div class="flex items-center flex-col p-4">
 
-                <div class="card-icon-git flex flex-col items-center w-4/5 p-3 rounded icon-secondary-reveal">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="60"  height="60"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-git text-white"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 15v-6" /><path d="M15 11l-2 -2" /><path d="M11 7l-1.9 -1.9" /><path d="M13.446 2.6l7.955 7.954a2.045 2.045 0 0 1 0 2.892l-7.955 7.955a2.045 2.045 0 0 1 -2.892 0l-7.955 -7.955a2.045 2.045 0 0 1 0 -2.892l7.955 -7.955a2.045 2.045 0 0 1 2.892 0z" /></svg>
+                <div class="card-icon-git flex flex-col items-center w-full sm:w-4/5 p-3 rounded icon-secondary-reveal">
+                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-git text-white w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 15v-6" /><path d="M15 11l-2 -2" /><path d="M11 7l-1.9 -1.9" /><path d="M13.446 2.6l7.955 7.954a2.045 2.045 0 0 1 0 2.892l-7.955 7.955a2.045 2.045 0 0 1 -2.892 0l-7.955 -7.955a2.045 2.045 0 0 1 0 -2.892l7.955 -7.955a2.045 2.045 0 0 1 2.892 0z" /></svg>
 
-                    <span class="text-2xl uppercase font-bold text-white">git</span>
+                    <span class="text-sm md:text-lg lg:text-2xl uppercase font-bold text-white">git</span>
                 </div>
             </div>
 
@@ -295,10 +316,10 @@
             <!-- Icon Sql -->
             <div class="flex items-center flex-col p-4">
             
-                <div class="card-icon-sql flex flex-col items-center w-4/5 p-3 rounded icon-secondary-reveal">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="60"  height="60"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sql text-white"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8a2 2 0 0 1 2 2v4a2 2 0 1 1 -4 0v-4a2 2 0 0 1 2 -2z" /><path d="M17 8v8h4" /><path d="M13 15l1 1" /><path d="M3 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-2a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1" /></svg>
+                <div class="card-icon-sql flex flex-col items-center w-full sm:w-4/5 p-3 rounded icon-secondary-reveal">
+                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sql text-white w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8a2 2 0 0 1 2 2v4a2 2 0 1 1 -4 0v-4a2 2 0 0 1 2 -2z" /><path d="M17 8v8h4" /><path d="M13 15l1 1" /><path d="M3 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-2a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1" /></svg>
 
-                    <span class="text-2xl uppercase font-bold text-white">sql</span>
+                    <span class="text-sm md:text-lg lg:text-2xl uppercase font-bold text-white">sql</span>
                 </div>
             </div>
 
@@ -312,17 +333,17 @@
 
     <!-- Section Projects -->
 
-    <section class="flex justify-between items-center w-11/12 mx-auto my-4 mt-60" id="projects">
+    <section class="flex justify-between items-center w-11/12 mx-auto my-4 mt-20 lg:mt-60" id="projects">
 
         <!-- Container Projects -->
         <div class="projects w-full">
                 
-                <h2 class="text-4xl text-white font-playfair font-bold text-center p-4 mb-8 title-projects-reveal">Projects</h2>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl text-white font-playfair font-bold text-center p-4 mb-8 title-projects-reveal">Projects</h2>
                 
-                <div class="grid grid-cols-3 gap-2 items-center w-full">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 items-center w-full">
 
                     <!-- Project Bienes Raices -->
-                    <div class="w-full lg:pl-3 pb-3 project-primary-reveal">
+                    <div class="w-10/12 mx-auto lg:w-full lg:pl-3 pb-3 project-primary-reveal">
                         <div class="card-project-primary card p-0">
             
                             <a href="http://cedbago.nyc.dom.my.id/" target="_blank">
@@ -331,13 +352,13 @@
             
                             <div class="p-6">
                                 
-                                <a href="http://cedbago.nyc.dom.my.id/" class="text-white card-title hover:text-indigo-600 font-source" target="_blank">
+                                <a href="http://cedbago.nyc.dom.my.id/" class="text-white hover:text-indigo-600 font-source text-xl md:text-2xl font-bold" target="_blank">
                                     Devstagram
                                 </a>
 
                                 <div class="card-body">
-                                    <p class="text-white mt-2 font-source">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque esse, dolorum beatae odit omnis excepturi perspiciatis, magnam nesciunt ullam dicta aut ipsam corrupti dolores quisquam neque enim odio nisi! Nostrum?
+                                    <p class="text-white mt-2 font-source text-sm md:text-lg leading-normal">
+                                    Social network project for programmers and developers, where they can share their projects and experiences in the world of programming and web development in general.
                                     </p>
                                 </div>
                             </div>
@@ -345,7 +366,7 @@
                     </div>
 
                     <!-- Project App Salon  -->
-                    <div class="w-full lg:pl-3 pb-3 project-secondary-reveal">
+                    <div class="w-10/12 mx-auto lg:w-full lg:pl-3 pb-3 project-secondary-reveal">
                         <div class="card-project-primary card p-0">
             
                             <a href="#" target="_blank">
@@ -354,12 +375,12 @@
             
                             <div class="p-6">
 
-                                <a href="#" target="_blank" class="card-title text-white hover:text-indigo-600 font-source">
+                                <a href="#" target="_blank" class="card-title text-white hover:text-indigo-600 font-source text-xl md:text-2xl font-bold">
                                     Bienes Raices
                                 </a>
 
                                 <div class="card-body">
-                                    <p class="text-white mt-2 font-source">
+                                    <p class="text-white mt-2 font-source text-sm md:text-lg leading-normal">
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque esse, dolorum beatae odit omnis excepturi perspiciatis, magnam nesciunt ullam dicta aut ipsam corrupti dolores quisquam neque enim odio nisi! Nostrum?
                                     </p>
                                 </div>
@@ -368,7 +389,7 @@
                     </div>
 
                     <!-- Project Devstagram -->
-                    <div class="w-full lg:pl-3 pb-3 project-tertiary-reveal">
+                    <div class="w-10/12 mx-auto lg:w-full lg:pl-3 pb-3 project-tertiary-reveal">
                         <div class="card-project-primary card p-0">
             
                             <a href="#" target="_blank">
@@ -377,12 +398,12 @@
             
                             <div class="p-6">
                                 
-                                <a href="#" target="_blank" class="card-title text-white hover:text-indigo-600 font-source">
+                                <a href="#" target="_blank" class="card-title text-white hover:text-indigo-600 font-source text-xl md:text-2xl font-bold">
                                     App Salon
                                 </a>
 
                                 <div class="card-body">
-                                    <p class="text-white mt-2 font-source">
+                                    <p class="text-white mt-2 font-source text-sm md:text-lg leading-normal">
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque esse, dolorum beatae odit omnis excepturi perspiciatis, magnam nesciunt ullam dicta aut ipsam corrupti dolores quisquam neque enim odio nisi! Nostrum?
                                     </p>
                                 </div>
@@ -398,10 +419,10 @@
     <!-- Here End Section Projects -->
 
     <!-- Footer -->
-    <footer class="mt-32" id="contact">
+    <footer class="lg:mt-32" id="contact">
 
         <!-- Container Contact Icons -->
-        <div class="w-1/2 mx-auto py-14 flex justify-between">
+        <div class="w-10/12 lg:w-1/2 mx-auto py-14 flex justify-between">
 
                 <!-- Icon Instagram -->
                 <div class="contact-icon-instagram">
@@ -437,7 +458,7 @@
 
             <!-- Icon Github -->
                 <div class="contact-icon-github">
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/Jeyker-Dev" target="_blank">
                         <svg  xmlns="http://www.w3.org/2000/svg"  width="45"  height="45"  viewBox="0 0 24 24"  fill="white"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
                     </a>
                 </div>
