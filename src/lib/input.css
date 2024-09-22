@@ -1071,6 +1071,221 @@
   color: #6366f2; 
 }
 
+/* MYSQL */
+
+.card-icon-mysql {
+  transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -webkit-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -moz-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -ms-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -o-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+}
+
+.card-icon-mysql svg,
+.card-icon-mysql span {
+  transition: fill 0.3s ease, color 0.3s ease;
+}
+
+.card-icon-mysql {
+  background-color: rgba(29, 78, 216, 0.2); /* Azul oscuro con transparencia */
+  box-shadow: 0 5px 15px rgba(29, 78, 216, 0.2); /* Sombra con el mismo color azul oscuro */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-mysql svg {
+  color: #1d4ed8; /* Cambia el color de relleno del SVG a azul oscuro */
+}
+
+.card-icon-mysql span {
+  color: #1d4ed8; /* Cambia el color del texto a azul oscuro */
+}
+
+.card-icon-mysql:hover {
+  background-color: rgba(29, 78, 216, 0.5); /* Azul oscuro con transparencia */
+  box-shadow: 0 5px 15px rgba(29, 78, 216, 0.5); /* Sombra con el mismo color azul oscuro */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-mysql:hover svg {
+  color: #1d4ed8;
+}
+
+.card-icon-mysql:hover span {
+  color: #1d4ed8; 
+}
+
+/* LIVEWIRE */
+
+.card-icon-livewire {
+  transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -webkit-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -moz-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -ms-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -o-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+}
+
+.card-icon-livewire svg,
+.card-icon-livewire span {
+  transition: fill 0.3s ease, color 0.3s ease;
+}
+
+.card-icon-livewire {
+  background-color: rgba(244, 114, 182, 0.2); /* Rosa con transparencia */
+  box-shadow: 0 5px 15px rgba(244, 114, 182, 0.2); /* Sombra con el mismo color rosa */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-livewire svg {
+  color: #f472b6; /* Cambia el color de relleno del SVG a rosa */
+}
+
+.card-icon-livewire span {
+  color: #f472b6; /* Cambia el color del texto a rosa */
+}
+
+.card-icon-livewire:hover {
+  background-color: rgba(244, 114, 182, 0.5); /* Rosa con transparencia */
+  box-shadow: 0 5px 15px rgba(244, 114, 182, 0.5); /* Sombra con el mismo color rosa */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-livewire:hover svg {
+  color: #f472b6;
+}
+
+.card-icon-livewire:hover span {
+  color: #f472b6; 
+}
+
+/* ALPINEJS */
+
+.card-icon-alpinejs {
+  transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -webkit-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -moz-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -ms-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -o-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+}
+
+.card-icon-alpinejs svg,
+.card-icon-alpinejs span {
+  transition: fill 0.3s ease, color 0.3s ease;
+}
+
+.card-icon-alpinejs {
+  background-color: rgba(147, 197, 253, 0.2); /* Azul claro con transparencia */
+  box-shadow: 0 5px 15px rgba(147, 197, 253, 0.2); /* Sombra con el mismo color azul claro */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-alpinejs svg {
+  color: #93c5fd; /* Cambia el color de relleno del SVG a azul claro */
+}
+
+.card-icon-alpinejs span {
+  color: #93c5fd; /* Cambia el color del texto a azul claro */
+}
+
+.card-icon-alpinejs:hover {
+  background-color: rgba(147, 197, 253, 0.5); /* Azul claro con transparencia */
+  box-shadow: 0 5px 15px rgba(147, 197, 253, 0.5); /* Sombra con el mismo color azul claro */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-alpinejs:hover svg {
+  color: #93c5fd;
+}
+
+.card-icon-alpinejs:hover span {
+  color: #93c5fd; 
+}
+
+/* DOCKER */
+
+.card-icon-docker {
+  transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -webkit-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -moz-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -ms-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -o-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+}
+
+.card-icon-docker svg,
+.card-icon-docker span {
+  transition: fill 0.3s ease, color 0.3s ease;
+}
+
+.card-icon-docker {
+  background-color: rgba(37, 99, 235, 0.2); /* Azul oscuro con transparencia */
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.2); /* Sombra con el mismo color azul oscuro */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-docker svg {
+  color: #2563eb; /* Cambia el color de relleno del SVG a azul oscuro */
+}
+
+.card-icon-docker span {
+  color: #2563eb; /* Cambia el color del texto a azul oscuro */
+}
+
+.card-icon-docker:hover {
+  background-color: rgba(37, 99, 235, 0.5); /* Azul oscuro con transparencia */
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.5); /* Sombra con el mismo color azul oscuro */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-docker:hover svg {
+  color: #2563eb;
+}
+
+.card-icon-docker:hover span {
+  color: #2563eb; 
+}
+
+/* API */
+
+.card-icon-api {
+  transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -webkit-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -moz-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -ms-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+  -o-transition: background-color 1.3s ease, box-shadow 1.3s ease, color 1.3s ease;
+}
+
+.card-icon-api svg,
+.card-icon-api span {
+  transition: fill 0.3s ease, color 0.3s ease;
+}
+
+.card-icon-api {
+  background-color: rgba(249, 115, 22, 0.2); /* Naranja con transparencia */
+  box-shadow: 0 5px 15px rgba(249, 115, 22, 0.2); /* Sombra con el mismo color naranja */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-api svg {
+  color: #f97316; /* Cambia el color de relleno del SVG a naranja */
+}
+
+.card-icon-api span {
+  color: #f97316; /* Cambia el color del texto a naranja */
+}
+
+.card-icon-api:hover {
+  background-color: rgba(249, 115, 22, 0.5); /* Naranja con transparencia */
+  box-shadow: 0 5px 15px rgba(249, 115, 22, 0.5); /* Sombra con el mismo color naranja */
+  backdrop-filter: blur(10px);
+}
+
+.card-icon-api:hover svg {
+  color: #f97316;
+}
+
+.card-icon-api:hover span {
+  color: #f97316; 
+}
+
 /* CARDS PROJECTS */
 
 .card-project-primary
