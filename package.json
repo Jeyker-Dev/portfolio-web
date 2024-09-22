@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "start": "npx tailwindcss -i ./src/lib/input.css -o ./src/dist/app.css --watch"
+    "dev": "npx tailwindcss -i ./src/lib/input.css -o ./src/dist/app.css --watch"
   },
   "keywords": [],
   "author": "Jeyker-Dev",
